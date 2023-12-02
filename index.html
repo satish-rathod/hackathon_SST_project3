@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Elegant Website</title>
+</head>
+<body>
+
+<header>
+    <div class="nav-content">
+        <nav>
+            <div class="logo">
+                <span>Lorem Ipsum</span>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#special-events">Special Events</a></li>
+                    <li><a href="#chefs">Chefs</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li class="dropdown">
+                        <a href="#">More</a>
+                        <div class="dropdown-content">
+                            <a href="#contact">Contact</a>
+                            <a href="#bookatable">Book a Table</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <section id="home">
+        
+        <div class="home-content">
+            <h2>Welcome to <span class="accent-text">Your Restaurant Name</span></h2>
+            <p>Discover a delightful dining experience with our exquisite menu and cozy ambiance.</p>
+            <div class="home-buttons">
+                <a href="#menu">Our Menu</a>
+                <a href="#book-table">Book a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <img src="images/about.jpg" alt="Restaurant Image">
+            <p>Discover the rich history and passion that defines <span class="accent-text">Your Restaurant Name</span>.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
+                Vivamus nec nisl in augue accumsan tempus. Integer nec libero sit amet lorem
+                ultrices cursus a eget odio.</p>
+        </div>
+    </section>
+    
+    <section id="why-choose-us">
+        <div class="why-choose-us-content">
+            <h2>Why Choose Us</h2>
+            <p>Experience the difference that sets us apart:</p>
+            <div class="card">
+                <h3>Exquisite Cuisine</h3>
+                <p>Indulge in a culinary journey with our carefully crafted dishes using the finest ingredients.</p>
+            </div>
+            <div class="card">
+                <h3>Cozy Ambiance</h3>
+                <p>Relax in our warm and inviting atmosphere, perfect for intimate dinners and special occasions.</p>
+            </div>
+            <div class="card">
+                <h3>Exceptional Service</h3>
+                <p>Our dedicated staff is committed to providing you with a memorable and enjoyable dining experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this section below the existing code -->
+
+<section id="menu">
+    <h2 class="menu_name">Our Menu</h2>
+    <div class="menu-tabs">
+        <button class="menu-tab" onclick="showCategory('all')">Show All</button>
+        <button class="menu-tab" onclick="showCategory('starters')">Starters</button>
+        <button class="menu-tab" onclick="showCategory('salads')">Salads</button>
+        <button class="menu-tab" onclick="showCategory('specialties')">Specialties</button>
+    </div>
+
+    <div class="menu-items">
+        <!-- Add your menu items here, initially hidden -->
+        <div class="menu-item all starters">
+            <h3>Starter Dish 1</h3>
+            <p>Description of the starter dish.</p>
+        </div>
+        <div class="menu-item all salads">
+            <h3>Salad Dish 1</h3>
+            <p>Description of the salad dish.</p>
+        </div>
+        <div class="menu-item all specialties">
+            <h3>Specialty Dish 1</h3>
+            <p>Description of the specialty dish.</p>
+        </div>
+        <!-- Add more menu items as needed -->
+    </div>
+
+    <!-- Add this section below the existing code -->
+
+<section id="specials">
+    <div class="specials-tabs">
+        <button class="specials-tab" onclick="showSpecial('dish1')">Dish 1</button>
+        <button class="specials-tab" onclick="showSpecial('dish2')">Dish 2</button>
+        <button class="specials-tab" onclick="showSpecial('dish3')">Dish 3</button>
+        <!-- Add more dish tabs as needed -->
+    </div>
+
+    <div class="specials-info">
+        <div id="dish1-info" class="dish-info">
+            <h3>Dish 1</h3>
+            <p>Description of Dish 1.</p>
+        </div>
+        <div id="dish2-info" class="dish-info">
+            <h3>Dish 2</h3>
+            <p>Description of Dish 2.</p>
+        </div>
+        <div id="dish3-info" class="dish-info">
+            <h3>Dish 3</h3>
+            <p>Description of Dish 3.</p>
+        </div>
+        <!-- Add more dish info divs as needed -->
+    </div>
+</section>
+
+<!-- Add this section below the existing code -->
+
+<section id="events">
+    <h2>Upcoming Events</h2>
+
+    <div class="events-slider">
+        <div class="event-card">
+            <h3>Birthday Party</h3>
+            <p>Celebrate your special day with us! We'll make it memorable.</p>
+        </div>
+        <div class="event-card">
+            <h3>Custom Party</h3>
+            <p>Create a personalized event tailored to your preferences.</p>
+        </div>
+        <div class="event-card">
+            <h3>Private Party</h3>
+            <p>Book our space for an exclusive and intimate gathering.</p>
+        </div>
+        <!-- Add more event cards as needed -->
+    </div>
+</section>
+<!-- Add this section below the existing code -->
+
+<!-- Add this section below the existing code -->
+
+<section id="book-table">
+    <h2>Book a Table</h2>
+
+    <form id="booking-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="people">Number of People:</label>
+        <input type="number" id="people" name="people" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="button" onclick="sendMessage()">Send Message</button>
+    </form>
+</section>
+
+<!-- Add this section below the existing code -->
+
+<section id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="images/gallery/gallery-1.jpg" alt="Restaurant Photo 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery/gallery-2.jpg" alt="Restaurant Photo 2">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery/gallery-3.jpg" alt="Restaurant Photo 3">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery/gallery-4.jpg" alt="Restaurant Photo 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery/gallery-5.jpg" alt="Restaurant Photo 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery/gallery-6.jpg" alt="Restaurant Photo 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery/gallery-7.jpg" alt="Restaurant Photo 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/gallery/gallery-8.jpg" alt="Restaurant Photo 1">
+        </div>
+        <!-- Add more gallery items as needed -->
+    </div>
+</section>
+
+<!-- Add this section below the existing code -->
+
+<section id="chefs">
+    <h2>Meet Our Chefs</h2>
+
+    <div class="chefs-container">
+        <div class="chef-card">
+            <img src="images/chefs/chefs-1.jpg" alt="Chef 1">
+            <h3>Chef John Doe</h3>
+            <p>Experience the culinary brilliance of Chef John Doe. With a passion for creating delightful dishes, he ensures a memorable dining experience for our guests.</p>
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </div>
+        </div>
+        <div class="chef-card">
+            <img src="images/chefs/chefs-2.jpg" alt="Chef 2">
+            <h3>Chef Jane Smith</h3>
+            <p>Chef Jane Smith brings her creativity and expertise to our kitchen. Her innovative approach to flavors adds a unique touch to every dish on our menu.</p>
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </div>
+        </div>
+        <div class="chef-card">
+            <img src="images/chefs/chefs-3.jpg" alt="Chef 3">
+            <h3>Chef Michael Johnson</h3>
+            <p>With years of culinary expertise, Chef Michael Johnson crafts dishes that tantalize the taste buds. His dedication to perfection is reflected in every plate.</p>
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Add this section below the existing code -->
+
+<section id="testimonials">
+    <h2>What Our Customers Say</h2>
+
+    <div class="testimonials-slider">
+        <div class="testimonial-card">
+            <img src="images/testimonials/testimonials-1.jpg" alt="Customer 1">
+            <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            <p class="message">"Great experience! The food was delicious, and the service was exceptional. Definitely coming back!"</p>
+        </div>
+        <div class="testimonial-card">
+            <img src="images/testimonials/testimonials-2.jpg" alt="Customer 2">
+            <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p class="message">"Fantastic ambiance and a wide variety of dishes. A perfect place for a memorable dining experience."</p>
+        </div>
+        <div class="testimonial-card">
+            <img src="images/testimonials/testimonials-3.jpg" alt="Customer 3">
+            <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p class="message">"Outstanding service! The staff went above and beyond to make our evening special. Highly recommended."</p>
+        </div>
+        <div class="testimonial-card">
+            <img src="images/testimonials/testimonials-4.jpg" alt="Customer 1">
+            <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            <p class="message">"Great experience! The food was delicious, and the service was exceptional. Definitely coming back!"</p>
+        </div>
+        <div class="testimonial-card">
+            <img src="images/testimonials/testimonials-5.jpg" alt="Customer 1">
+            <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            <p class="message">"Great experience! The food was delicious, and the service was exceptional. Definitely coming back!"</p>
+        </div>
+        <!-- Add more testimonial cards as needed -->
+    </div>
+</section>
+
+
+    <!-- Other sections (Home, About, Menu, etc.) go here -->
+
+</body>
+
+<!-- Add this section below the existing code -->
+
+<section id="contact">
+    <div class="contact-card">
+        <h2>Contact Us</h2>
+        <p><strong>Location:</strong> 123 Restaurant Street, Cityville, Country</p>
+        <p><strong>Service Timings:</strong> Mon-Sat: 11:00 AM - 9:00 PM</p>
+        <p><strong>Email:</strong> info@yourrestaurant.com</p>
+        <p><strong>Contact No.:</strong> +1 (123) 456-7890</p>
+    </div>
+
+    <div class="contact-form">
+        <h2>Send us a Message</h2>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="sendMessage()">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+<!-- Add this section below the existing code -->
+
+<footer>
+    <div class="footer-content">
+        <h2>Your Restaurant Name</h2>
+        <p>Delighting taste buds since 20XX. Join us for an exquisite dining experience.</p>
+
+        <div class="social-media-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <!-- Add more social media links as needed -->
+        </div>
+    </div>
+
+    <p class="copyright">&copy; 20XX Your Restaurant Name. All rights reserved.</p>
+</footer>
+
+
+</html>

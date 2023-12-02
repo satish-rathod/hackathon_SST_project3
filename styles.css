@@ -1,0 +1,658 @@
+/* Add this to your styles.css file */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+#home {
+    margin-top: 100px;
+    background-image: url('images/specials-2.jpg');
+    background-size: cover;
+    background-position: center;
+    color:white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.home-buttons a {
+    background-color: transparent;
+    color: #fff;
+    border: 5px solid #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.home-buttons a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Add this to your styles.css file */
+
+/* About Us Section */
+#about {
+    background-color: #f8ece1;
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Add this to your styles.css file */
+
+/* Why Choose Us Section */
+#why-choose-us {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.why-choose-us-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.why-choose-us-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Add this to your styles.css file */
+
+/* Menu Section */
+#menu {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.menu_name
+{
+font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Your Stylish Font', sans-serif;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.menu-tab {
+    background-color: transparent;
+    color: black;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 20px;
+    border: 3px solid rgba(248, 113, 35, 1);
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu-tab:hover {
+    background-color:  rgba(248, 113, 35, 1);
+    color: #fff;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Add this to your styles.css file */
+
+/* Specials Section */
+#specials {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.specials-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.specials-tab {
+    background-color:transparent;
+    color: black;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 20px;
+    border: 3px solid rgba(248, 113, 35, 1);
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.specials-tab:hover {
+    background-color:  rgba(248, 113, 35, 1);
+    color: #fff;
+}
+
+.specials-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dish-info {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dish-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.dish-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Add this to your styles.css file */
+
+/* Events Section */
+#events {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.events-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.event-card {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    scroll-snap-align: start;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Hide scrollbar for webkit browsers */
+.events-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Add this to your styles.css file */
+
+/* Book a Table Section */
+#book-table {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#booking-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#booking-form input,
+#booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#booking-form button {
+    background-color: #e44d26;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#booking-form button:hover {
+    background-color: #333;
+}
+
+/* Add this to your styles.css file */
+
+/* Gallery Section */
+#gallery {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Add this to your styles.css file */
+
+/* Chefs Section */
+#chefs {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.chefs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.chef-card {
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chef-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.chef-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.chef-card p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    color: #e44d26;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #333;
+}
+
+/* Add this to your styles.css file */
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.testimonials-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.testimonial-card {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    scroll-snap-align: start;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-card .rating {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.testimonial-card p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Hide scrollbar for webkit browsers */
+.testimonials-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Add this to your styles.css file */
+
+/* Contact Us Section */
+#contact {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.contact-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #e44d26;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+/* Add this to your styles.css file */
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-media-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-media-links a:hover {
+    color: #e44d26;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
