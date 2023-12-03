@@ -85,10 +85,6 @@ a:hover {
     display: block;
 }
 
-#booking-form
-{
-    background-color: rgba(248, 113, 35, 1);
-}
 #home {
     margin-top: 40px;
     background-image: url('images/specials-2.jpg');
