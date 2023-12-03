@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Your Elegant Website</title>
+    <title>Lorem Ipsum</title>
 </head>
 <body>
 
@@ -12,34 +15,30 @@
     <div class="nav-content">
         <nav>
             <div class="logo">
-                <span>Lorem Ipsum</span>
+                <span style="font-family: 'Dancing Script', cursive;">Lorem Ipsum</span>
             </div>
             <div>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#menu">Menu</a></li>
-                    <li><a href="#special-events">Special Events</a></li>
+                    <li><a href="#events">Special Events</a></li>
                     <li><a href="#chefs">Chefs</a></li>
                     <li><a href="#gallery">Gallery</a></li>
-                    <li class="dropdown">
-                        <a href="#">More</a>
-                        <div class="dropdown-content">
-                            <a href="#contact">Contact</a>
-                            <a href="#bookatable">Book a Table</a>
-                        </div>
-                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#booking-form">Book a Table</a></li>
+                   
                 </ul>
             </div>
         </nav>
     </div>
-</header>
+</header>s
 
     <section id="home">
         
         <div class="home-content">
-            <h2>Welcome to <span class="accent-text">Your Restaurant Name</span></h2>
-            <p>Discover a delightful dining experience with our exquisite menu and cozy ambiance.</p>
+            <h2 style="font-family: 'Dancing Script', cursive;"> Lorem Ipsum dolor</h2>
+            <p>"Indulge in a delightful dining experience at our establishment, where a carefully curated menu meets a cozy ambiance. From exquisite appetizers to sumptuous mains, our culinary offerings promise a journey of flavors. Immerse yourself in warmth and charm, creating memorable moments with each visit. Discover joy in every bite and ambiance.".</p>
             <div class="home-buttons">
                 <a href="#menu">Our Menu</a>
                 <a href="#book-table">Book a Table</a>
@@ -49,38 +48,44 @@
 
     <section id="about">
         <div class="about-content">
-            <h2>About Us</h2>
-            <img src="images/about.jpg" alt="Restaurant Image">
-            <p>Discover the rich history and passion that defines <span class="accent-text">Your Restaurant Name</span>.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
-                Vivamus nec nisl in augue accumsan tempus. Integer nec libero sit amet lorem
-                ultrices cursus a eget odio.</p>
+            <div class="about-text">
+                <h2 style="font-family: 'Dancing Script', cursive;">About Us</h2>
+                <p>Discover the rich history and passion that defines <span class="accent-text">Lorem Ipsum</span>.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
+                    Vivamus nec nisl in augue accumsan tempus. Integer nec libero sit amet lorem
+                    ultrices cursus a eget odio.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/about.jpg" alt="Restaurant Image">
+            </div>
         </div>
     </section>
     
+    
+    
     <section id="why-choose-us">
         <div class="why-choose-us-content">
-            <h2>Why Choose Us</h2>
+            <h2 style="font-family: 'Dancing Script', cursive;">Why Choose Us</h2>
             <p>Experience the difference that sets us apart:</p>
-            <div class="card">
-                <h3>Exquisite Cuisine</h3>
-                <p>Indulge in a culinary journey with our carefully crafted dishes using the finest ingredients.</p>
-            </div>
-            <div class="card">
-                <h3>Cozy Ambiance</h3>
-                <p>Relax in our warm and inviting atmosphere, perfect for intimate dinners and special occasions.</p>
-            </div>
-            <div class="card">
-                <h3>Exceptional Service</h3>
-                <p>Our dedicated staff is committed to providing you with a memorable and enjoyable dining experience.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Exquisite Cuisine</h3>
+                    <p>Indulge in a culinary journey with our carefully crafted dishes using the finest ingredients.</p>
+                </div>
+                <div class="card">
+                    <h3>Cozy Ambiance</h3>
+                    <p>Relax in our warm and inviting atmosphere, perfect for intimate dinners and special occasions.</p>
+                </div>
+                <div class="card">
+                    <h3>Exceptional Service</h3>
+                    <p>Our dedicated staff is committed to providing you with a memorable and enjoyable dining experience.</p>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Add this section below the existing code -->
-
+    
 <section id="menu">
-    <h2 class="menu_name">Our Menu</h2>
+    <h2  style="font-family: 'Dancing Script', cursive; size:4">Our Menu</h2>
     <div class="menu-tabs">
         <button class="menu-tab" onclick="showCategory('all')">Show All</button>
         <button class="menu-tab" onclick="showCategory('starters')">Starters</button>
@@ -89,7 +94,6 @@
     </div>
 
     <div class="menu-items">
-        <!-- Add your menu items here, initially hidden -->
         <div class="menu-item all starters">
             <h3>Starter Dish 1</h3>
             <p>Description of the starter dish.</p>
@@ -102,17 +106,16 @@
             <h3>Specialty Dish 1</h3>
             <p>Description of the specialty dish.</p>
         </div>
-        <!-- Add more menu items as needed -->
     </div>
+</section>
 
-    <!-- Add this section below the existing code -->
 
 <section id="specials">
+    <h2 style="font-family: 'Dancing Script', cursive;">Specials</h2>
     <div class="specials-tabs">
         <button class="specials-tab" onclick="showSpecial('dish1')">Dish 1</button>
         <button class="specials-tab" onclick="showSpecial('dish2')">Dish 2</button>
         <button class="specials-tab" onclick="showSpecial('dish3')">Dish 3</button>
-        <!-- Add more dish tabs as needed -->
     </div>
 
     <div class="specials-info">
@@ -128,14 +131,12 @@
             <h3>Dish 3</h3>
             <p>Description of Dish 3.</p>
         </div>
-        <!-- Add more dish info divs as needed -->
     </div>
 </section>
 
-<!-- Add this section below the existing code -->
 
 <section id="events">
-    <h2>Upcoming Events</h2>
+    <h2 style="font-family: 'Dancing Script', cursive;">Events</h2>
 
     <div class="events-slider">
         <div class="event-card">
@@ -150,16 +151,12 @@
             <h3>Private Party</h3>
             <p>Book our space for an exclusive and intimate gathering.</p>
         </div>
-        <!-- Add more event cards as needed -->
     </div>
 </section>
-<!-- Add this section below the existing code -->
 
-<!-- Add this section below the existing code -->
 
 <section id="book-table">
-    <h2>Book a Table</h2>
-
+    <h2 style="font-family: 'Dancing Script', cursive;">Book a Table</h2>
     <form id="booking-form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -186,10 +183,10 @@
     </form>
 </section>
 
-<!-- Add this section below the existing code -->
+
 
 <section id="gallery">
-    <h2>Gallery</h2>
+    <h2 style="font-family: 'Dancing Script', cursive;">Gallery</h2>
 
     <div class="gallery-container">
         <div class="gallery-item">
@@ -216,14 +213,12 @@
         <div class="gallery-item">
             <img src="images/gallery/gallery-8.jpg" alt="Restaurant Photo 1">
         </div>
-        <!-- Add more gallery items as needed -->
     </div>
 </section>
 
-<!-- Add this section below the existing code -->
 
 <section id="chefs">
-    <h2>Meet Our Chefs</h2>
+    <h2 style="font-family: 'Dancing Script', cursive;">Meet Our Chefs</h2>
 
     <div class="chefs-container">
         <div class="chef-card">
@@ -258,10 +253,9 @@
         </div>
     </div>
 </section>
-<!-- Add this section below the existing code -->
 
 <section id="testimonials">
-    <h2>What Our Customers Say</h2>
+    <h2 style="font-family: 'Dancing Script', cursive;">What Our Customers Say</h2>
 
     <div class="testimonials-slider">
         <div class="testimonial-card">
@@ -289,20 +283,17 @@
             <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
             <p class="message">"Great experience! The food was delicious, and the service was exceptional. Definitely coming back!"</p>
         </div>
-        <!-- Add more testimonial cards as needed -->
     </div>
 </section>
 
 
-    <!-- Other sections (Home, About, Menu, etc.) go here -->
 
 </body>
 
-<!-- Add this section below the existing code -->
 
 <section id="contact">
     <div class="contact-card">
-        <h2>Contact Us</h2>
+        <h2 style="font-family: 'Dancing Script', cursive;">Contact Us</h2>
         <p><strong>Location:</strong> 123 Restaurant Street, Cityville, Country</p>
         <p><strong>Service Timings:</strong> Mon-Sat: 11:00 AM - 9:00 PM</p>
         <p><strong>Email:</strong> info@yourrestaurant.com</p>
@@ -310,7 +301,7 @@
     </div>
 
     <div class="contact-form">
-        <h2>Send us a Message</h2>
+        <h2 style="font-family: 'Dancing Script', cursive;">Send us a Message</h2>
         <form id="contact-form">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
@@ -330,18 +321,16 @@
 </section>
 
 
-<!-- Add this section below the existing code -->
 
 <footer>
+    <h2 style="font-family: 'Dancing Script', cursive;">lorem Ipsum</h2>
     <div class="footer-content">
-        <h2>Your Restaurant Name</h2>
         <p>Delighting taste buds since 20XX. Join us for an exquisite dining experience.</p>
 
         <div class="social-media-links">
             <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <!-- Add more social media links as needed -->
         </div>
     </div>
 

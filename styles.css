@@ -5,13 +5,31 @@ body {
 }
 
 header {
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.book-btn
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.scroll {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-content {
@@ -22,12 +40,13 @@ header {
 
 nav {
     display: flex;
+    justify-content: space-around;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: bold;
 }
 
@@ -40,23 +59,25 @@ ul {
 
 li {
     margin: 0 15px;
+    font: bold 14px/1.5 Helvetica, Verdana, sans-serif;
+    size: 10px;
 }
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #faf9f9;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #007bff;
+    color: #e48d65;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    background-color: #0a0a0a;
+    box-shadow: 0px 8px 16px 0px rgba(173, 173, 173, 0.7);
     z-index: 1;
 }
 
@@ -64,24 +85,41 @@ a:hover {
     display: block;
 }
 
-
+#booking-form
+{
+    background-color: rgba(248, 113, 35, 1);
+}
 #home {
-    margin-top: 100px;
+    margin-top: 40px;
     background-image: url('images/specials-2.jpg');
     background-size: cover;
     background-position: center;
-    color:white;
+    position: relative;
+    color: white;
     text-align: center;
     padding: 100px 20px;
+}
+
+#home::before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .home-content {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .home-content h2 {
-    font-size: 36px;
+    color: #fff;
+    font-size: 78px;
     margin-bottom: 20px;
 }
 
@@ -99,58 +137,72 @@ a:hover {
 .home-buttons a {
     background-color: transparent;
     color: #fff;
-    border: 5px solid #fff;
-    padding: 15px 30px;
+    border: 5px solid #eb823c;
+    padding: 10px 20px;
     font-size: 18px;
+    font-weight: bold;
     text-decoration: none;
     margin-right: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     transition: background-color 0.3s ease-in-out;
 }
 
 .home-buttons a:hover {
-    background-color: #fff;
-    color: #333;
+    background-color: #eb823c;
+    color: #fff;
 }
 
-/* Add this to your styles.css file */
 
-/* About Us Section */
+
 #about {
     background-color: #f8ece1;
     color: #333;
     text-align: center;
     padding: 100px 20px;
+    display: flex;
 }
 
 .about-content {
+    display: flex;
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.about-content h2 {
-    font-size: 36px;
+.about-text {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.about-text h2 {
+    font-size: 40px;
     margin-bottom: 20px;
+    color: #ff5e00;
 }
 
-.about-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
-
-.about-content p {
+.about-text p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 30px;
 }
 
-/* Add this to your styles.css file */
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-/* Why Choose Us Section */
+.accent-text {
+    color: #ff5e00;
+}
+
 #why-choose-us {
-    background-color: #f4f4f4;
+    background-color: #fad4b5;
     color: #333;
     text-align: center;
     padding: 100px 20px;
@@ -162,11 +214,19 @@ a:hover {
 }
 
 .why-choose-us-content h2 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
+.card-container {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 1rem;
+
+}
+
 .card {
+    flex: 0 0 calc(33.333% - 20px);
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -185,10 +245,9 @@ a:hover {
     margin-bottom: 20px;
 }
 
-/* Add this to your styles.css file */
 
-/* Menu Section */
 #menu {
+    background-image: ('images/chefs-bg.jpg');
     background-color: #fff;
     color: #333;
     text-align: center;
@@ -252,9 +311,6 @@ font-size: 36px;
     margin-bottom: 20px;
 }
 
-/* Add this to your styles.css file */
-
-/* Specials Section */
 #specials {
     background-color: #f4f4f4;
     color: #333;
@@ -311,12 +367,10 @@ font-size: 36px;
     margin-bottom: 20px;
 }
 
-/* Add this to your styles.css file */
-
-/* Events Section */
 #events {
+    background-image: url(images/event-custom.jpg);
     background-color: #fff;
-    color: #333;
+    color: #fdfcfb;
     text-align: center;
     padding: 100px 20px;
 }
@@ -334,7 +388,8 @@ font-size: 36px;
     width: 300px;
     margin-right: 20px;
     scroll-snap-align: start;
-    background-color: #f4f4f4;
+    color: #333;
+    background-color:rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -351,15 +406,12 @@ font-size: 36px;
     margin-bottom: 20px;
 }
 
-/* Hide scrollbar for webkit browsers */
 .events-slider::-webkit-scrollbar {
     display: none;
 }
 
-/* Add this to your styles.css file */
-
-/* Book a Table Section */
 #book-table {
+    background-image: url('images/events-bg.jpg');
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
@@ -374,37 +426,41 @@ font-size: 36px;
 #booking-form label {
     display: block;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 #booking-form input,
 #booking-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: border-color 0.3s ease;
 }
 
 #booking-form button {
-    background-color: #e44d26;
+    background-color: transparent;
     color: #fff;
     padding: 15px 30px;
     font-size: 18px;
-    border: none;
-    border-radius: 5px;
+    border: 5px solid #e44d26;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 
 #booking-form button:hover {
-    background-color: #333;
+    background-color: #e44d26;
 }
 
-/* Add this to your styles.css file */
+#booking-form input:focus,
+#booking-form textarea:focus {
+    border-color: #e44d26;
+}
 
-/* Gallery Section */
 #gallery {
-    background-color: #fff;
+    background-color: #fdc9bf;
     color: #333;
     text-align: center;
     padding: 100px 20px;
@@ -433,12 +489,10 @@ font-size: 36px;
     transform: scale(1.1);
 }
 
-/* Add this to your styles.css file */
-
-/* Chefs Section */
 #chefs {
+    background-image: url(images/slide/slide-3.jpg);
     background-color: #f4f4f4;
-    color: #333;
+    color: #fff;
     text-align: center;
     padding: 100px 20px;
 }
@@ -451,6 +505,8 @@ font-size: 36px;
 }
 
 .chef-card {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
     max-width: 300px;
     margin: 20px;
     padding: 20px;
@@ -493,11 +549,8 @@ font-size: 36px;
     color: #333;
 }
 
-/* Add this to your styles.css file */
-
-/* Testimonials Section */
 #testimonials {
-    background-color: #fff;
+    background-color: #f3c6c6;
     color: #333;
     text-align: center;
     padding: 100px 20px;
@@ -540,14 +593,10 @@ font-size: 36px;
     margin-bottom: 20px;
 }
 
-/* Hide scrollbar for webkit browsers */
 .testimonials-slider::-webkit-scrollbar {
     display: none;
 }
 
-/* Add this to your styles.css file */
-
-/* Contact Us Section */
 #contact {
     background-color: #f4f4f4;
     color: #333;
@@ -565,7 +614,7 @@ font-size: 36px;
 }
 
 .contact-card h2 {
-    font-size: 32px;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
@@ -595,24 +644,23 @@ font-size: 36px;
 }
 
 .contact-form button {
-    background-color: #e44d26;
-    color: #fff;
+    background-color: transparent;
+    color: #e44d26;
+    border: 5px solid #e44d26;
     padding: 15px 30px;
     font-size: 18px;
-    border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 
 .contact-form button:hover {
-    background-color: #333;
+    background-color: #e44d26;
+    color: #fff;
 }
 
-/* Add this to your styles.css file */
-
-/* Footer Section */
 footer {
+    font-size: xx-large;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -623,17 +671,18 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center content horizontally */
     align-items: center;
     flex-wrap: wrap;
 }
 
 .footer-content h2 {
-    font-size: 24px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 .footer-content p {
+    text-align: center;
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -655,4 +704,3 @@ footer {
     font-size: 14px;
     margin-top: 10px;
 }
-
