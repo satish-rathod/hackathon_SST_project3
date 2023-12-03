@@ -381,6 +381,7 @@ font-size: 36px;
 
 .event-card {
     flex: 0 0 auto;
+    justify-content: space-evenly;
     width: 300px;
     margin-right: 20px;
     scroll-snap-align: start;
